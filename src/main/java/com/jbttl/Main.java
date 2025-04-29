@@ -8,6 +8,9 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.List;
 
+import com.jbttl.scanner.Scanner;
+import com.jbttl.token.Token;
+
 public class Main {
     static boolean hadError = false;
 
@@ -18,7 +21,7 @@ public class Main {
         } else if (args.length == 1) {
             runFile(args[0]);
         } else {
-            runPropmt();
+            runPrompt();
         }
     }
 
